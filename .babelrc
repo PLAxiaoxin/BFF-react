@@ -1,0 +1,15 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "esmodules": true
+        }
+        //"browserslist": "> 0.25%, not dead"
+      }
+  ],
+    "@babel/preset-react", 
+    "@babel/preset-typescript"
+  ]
+}

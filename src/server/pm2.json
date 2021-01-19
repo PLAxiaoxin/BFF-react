@@ -1,0 +1,17 @@
+{
+  "interpreter": "./node_modules/.bin/ts-node",
+  "//_comment1": "项目名字",
+  "name": "ydapp",
+  "//_comment2": "设置node单个进程可占用最大的内存，如果内存使用率超过300M，pm2自动重启该进程",
+  "max_memory_restart": "300M",
+  "//_comment3": "node主入口文件",
+  "script": "app.ts",
+  "out_file": "logs/pm2/-service-stdout-access.log",
+  "error_file": "logs/pm2/node-service-stderr-error.log",
+  "//_comment4": "让node程序占满你的cpu，发挥cpu最大的功效",
+  "instances": "max",
+  "//_comment5": "以主进程的方式启动",
+  "exec_mode": "cluster",
+  "//_comment6": "热启动 ",
+  "watch": true
+}

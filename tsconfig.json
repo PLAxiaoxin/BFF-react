@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "target":"es5",
+        "baseUrl": "./src",
+        "sourceMap": true,
+        "lib": ["es6", "dom"],
+        "removeComments": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "module": "commonjs",
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "types": ["node", "jest"],
+        "jsx": "react",
+        "esModuleInterop": true,
+        "typeRoots": ["typings","./node_modules/@types"],
+        "paths": {
+            "@components/*": ["web/components/*"],
+            "@utils/*": ["web/utils/*"],
+            "@assets/*": ["web/assets"],
+            "@models/*": ["web/models/*"],
+            "@routes/*": ["web/routes/*"],
+            "@pages/*": ["web/pages/*"],
+        }
+    },
+    // "include": ["src", "tests"],
+    // "exclude": ["node_modules", "webpack.config.js", "gulpfile.js"]
+}
+
+// sourceMap 用来指定编译时是否生成.map文件
+// noImplicitAny 如果没有给一些指设置明确类型，编辑器默认认为这个值为any类型，设置为true 没有明确设置类型会报错。默认值为false
+// removeComments指定是否将编译后的文件注释删除，默认false
+// jsx 指定jsx用于的开发环境
+// esModuleInterop 通过导入内容创建命名空间，实现commonjs 和 ES模块直接的互操作性
+// module 指定使用的模版标准
+// include 也可以指定要被编译的路径列表
+// exclude 表示要被排除的，不编译的文件
+// typeRoots 用来指定文件声明或者文件的路径列表，如果指定了此项，则只有这里列出的声明文件才会被加载
+

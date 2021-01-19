@@ -1,0 +1,27 @@
+/*
+ * @Author: your name
+ * @Date: 2020-11-10 01:05:10
+ * @LastEditTime: 2020-11-15 14:32:25
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /my-vip/src/server/tsconfig.json
+ */
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "strict": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": ["typings", "../../node_modules/@types", "../../typings"],
+    "baseUrl": "./",
+    "paths": {
+      "@interfaces/*": ["shared/*"],
+      "@config/*": ["config/*"],
+      "@middlewares/*": ["middlewares/*"]
+    }
+  },
+  "include": ["**/*.ts"]
+}

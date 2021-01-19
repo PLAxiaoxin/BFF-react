@@ -1,0 +1,10 @@
+dist
+node_modules
+config
+docs
+backup
+bin
+tests
+examples
+*.js
+src
